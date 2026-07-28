@@ -1,6 +1,8 @@
 export { Hero } from "./Hero";
-export { StatsBar } from "./StatsBar";
-export { ProductFamilies } from "./ProductFamilies";
-export { CapabilitiesSection } from "./CapabilitiesSection";
-export { MarketsSection } from "./MarketsSection";
-export { CTASection } from "./CTASection";
+export { OperatingSystems } from "./OperatingSystems";
+export { ProductCategories } from "./ProductCategories";
+export { EngineeringCapabilities } from "./EngineeringCapabilities";
+export { Markets } from "./Markets";
+export { FeaturedProducts } from "./FeaturedProducts";
+export { QualitySection } from "./QualitySection";
+export { QuoteCTA } from "./QuoteCTA";

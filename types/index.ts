@@ -5,29 +5,24 @@ export type NavItem = {
 };
 
 export type ProductFamily = {
-  title: string;
-  eyebrow: string;
+  id: string;
+  name: string;
+  category: string;
+  number: string;
   description: string;
   href: string;
-  metric: string;
-  sub: string;
-  icon?: string;
-};
-
-export type Product = {
-  id: string;
-  family: string;
-  name: string;
   slug: string;
-  description: string;
-  specs: ProductSpec[];
-  features: string[];
-  image?: string;
 };
 
-export type ProductSpec = {
-  label: string;
-  value: string;
+export type FeaturedProduct = {
+  id: string;
+  name: string;
+  series: string;
+  category: string;
+  description: string;
+  specs: { label: string; value: string }[];
+  href: string;
+  slug: string;
 };
 
 export type Market = {
@@ -41,14 +36,21 @@ export type Stat = {
   label: string;
 };
 
-export type Capability = {
-  icon: string;
+export type OperatingSystem = {
+  number: string;
   title: string;
+  description: string;
+  slug: string;
+};
+
+export type Capability = {
+  label: string;
   description: string;
 };
 
 export type SiteConfig = {
   name: string;
+  legalName: string;
   tagline: string;
   founded: number;
   contact: {
@@ -57,10 +59,13 @@ export type SiteConfig = {
     state: string;
     zip: string;
     phone: string;
+    tollFree: string;
     email: string;
   };
   navigation: NavItem[];
-  footerNavigation: NavItem[];
+  footerProducts: NavItem[];
+  footerMarkets: NavItem[];
+  footerCompany: NavItem[];
 };
 
 export type CTA = {
