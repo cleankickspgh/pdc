@@ -1,0 +1,11 @@
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "PDC Valve | Engineered Flow Control",
+  description: "Industrial valves, dampers and actuation systems engineered for demanding applications.",
+};
+
+export default function RootLayout({ children }: Readonly<{children: React.ReactNode}>) {
+  return <html lang="en"><body>{children}</body></html>;
+}
